@@ -185,8 +185,20 @@
                 this.submitted
                   ? "Divididas em " +
                     this.loanPayload.numberOfInstallments +
-                    "x parcelas"
+                    "x parcelas de " +
+                    this.loanPayload.valueOfInstallmentsFormatted
                   : "Divida em quantas parcelas precisar."
+              }}
+            </span>
+          </p>
+          <p
+            *ngIf="this.submitted"
+            class="mt-6 flex items-baseline justify-center gap-x-2"
+          >
+            <span class="text-sm font-semibold tracking-tight text-gray-700">
+              {{
+                "Total a pagar " +
+                  this.loanPayload.totalAmountWithInterestFormatted
               }}
             </span>
           </p>
