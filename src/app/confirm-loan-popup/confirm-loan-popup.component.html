@@ -1,0 +1,70 @@
+<div
+  *ngIf="show"
+  class="relative z-10"
+  aria-labelledby="modal-title"
+  role="dialog"
+  aria-modal="true"
+>
+  <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+  <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+    <div
+      class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+    >
+      <div
+        class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg"
+      >
+        <div class="bg-white p-14">
+          <div
+            class="mt-3 text-center flex items-center flex-col sm:ml-4 sm:mt-0 sm:text-left"
+          >
+            <h3
+              class="text-3xl font-semibold leading-6 text-gray-900"
+              id="modal-title"
+            >
+              Valores detalhados
+            </h3>
+            <div class="mt-2">
+              <p class="text-sm text-center text-gray-500">
+                Verifique os detalhes do seu empréstimo para prosseguirmos.
+              </p>
+            </div>
+          </div>
+
+          <ul
+            role="list"
+            class="mt-8 grid grid-cols-1 gap-4 text-lg leading-6 text-gray-800 sm:gap-6"
+          >
+            <li class="flex justify-between">
+              <span>Valor escolhido</span>
+              <span>R$ 10.000,00</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Parcelas</span>
+              <span>36x de R$ 1.048,34</span>
+            </li>
+            <li class="flex justify-between">
+              <span class="font-bold text-green-600">Total a pagar</span>
+              <span class="font-bold text-green-600">R$ 12.581,12</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+          <button
+            type="button"
+            class="inline-flex w-full justify-center rounded-md bg-orange-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-400 sm:ml-3 sm:w-auto"
+          >
+            Confirmar empréstimo
+          </button>
+          <button
+            (click)="this.onClose.emit()"
+            type="button"
+            class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
+          >
+            Cancelar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
