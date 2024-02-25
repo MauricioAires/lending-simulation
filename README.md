@@ -1,27 +1,48 @@
-# LendingSimulation
+<h1 align="center">
+    <img src="./.github/assets/cover.png">
+</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+### 🎉 Sobre o projeto
 
-## Development server
+O Lending Simulation é uma aplicação desenvolvida utilizando Angular e Tailwind, dedicada à simulação de empréstimos e créditos.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+### 🛠️ Tecnologias
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Angular](https://angular.io/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Tailwindcss](https://tailwindcss.com/)
 
-## Build
+### 🚀 Iniciando o projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+> ✨ Para executar a aplicação completa em ambiente de desenvolvimento baixe também [lending-simulation](https://github.com/MauricioAires/lending-simulation)
 
-## Running unit tests
+```sh
+# Clonar aplicação
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+$ git clone https://github.com/MauricioAires/lending-simulation
 
-## Running end-to-end tests
+# Acessar a aplicação
+$ cd lending-simulation
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Execute yarn para instalar as dependências
+$ yarn i
 
-## Further help
+# Para iniciar a aplicação
+$ yarn start
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+
+---
+
+### 📝 Licença
+
+Distribuído sob a licença MIT.
+Veja [LICENSE](LICENSE) para mais informações.
+
+---
+
+### 👨‍💻 Autor
+
+Feito por Mauricio Aires 👋🏽
