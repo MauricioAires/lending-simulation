@@ -1,5 +1,6 @@
 import { NgIf } from '@angular/common';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 interface ILoanPayload {
   loanAmount: number;
@@ -12,7 +13,7 @@ interface ILoanPayload {
 @Component({
   selector: 'app-confirm-loan-popup',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, RouterLink],
   templateUrl: './confirm-loan-popup.component.html',
 })
 export class ConfirmLoanPopupComponent {
