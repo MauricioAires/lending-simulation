@@ -37,15 +37,20 @@
           >
             <li class="flex justify-between">
               <span>Valor escolhido</span>
-              <span>R$ 10.000,00</span>
+              <span>{{ this.loanPayload.loanAmountFormatted }}</span>
             </li>
             <li class="flex justify-between">
               <span>Parcelas</span>
-              <span>36x de R$ 1.048,34</span>
+              <span>
+                {{ this.loanPayload.numberOfInstallments }}x de
+                {{ this.loanPayload.valueOfInstallmentsFormatted }}</span
+              >
             </li>
             <li class="flex justify-between">
               <span class="font-bold text-green-600">Total a pagar</span>
-              <span class="font-bold text-green-600">R$ 12.581,12</span>
+              <span class="font-bold text-green-600">{{
+                this.loanPayload.totalAmountWithInterestFormatted
+              }}</span>
             </li>
           </ul>
         </div>
