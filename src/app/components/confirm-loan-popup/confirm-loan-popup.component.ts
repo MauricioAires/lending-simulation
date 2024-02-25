@@ -1,6 +1,6 @@
 import { NgIf } from '@angular/common';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 interface ILoanPayload {
   loanAmount: number;
@@ -25,4 +25,15 @@ export class ConfirmLoanPopupComponent {
 
   @Output('onClose')
   onClose = new EventEmitter();
+
+  constructor(private router: Router) {}
+
+  public gotoSuccessLean() {
+    this.router.navigate([
+      '/sucesso',
+      {
+        ...this.loanPayload,
+      },
+    ]);
+  }
 }
