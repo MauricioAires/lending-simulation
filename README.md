@@ -1,6 +1,8 @@
 <h1 align="center">
-    <img src="./.github/assets/cover.png">
+    Lending Simulation -Simulação de empréstimo e crédito
 </h1>
+
+---
 
 ### 🎉 Sobre o projeto
 
