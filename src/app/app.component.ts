@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { NgIf } from '@angular/common';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 
-import { ConfirmLoanPopupComponent } from './confirm-loan-popup/confirm-loan-popup.component';
+import { ConfirmLoanPopupComponent } from './components/confirm-loan-popup/confirm-loan-popup.component';
 import { LoanService } from './services/loan.service';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -28,7 +28,6 @@ interface ILoanPayload {
   ],
   providers: [LoanService],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
 })
 export class AppComponent {
   public isLoadingGenerateSimulation = false;
