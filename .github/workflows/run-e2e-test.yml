@@ -1,9 +1,12 @@
 name: Run E2E Tests
 
 on: [push]
+
 jobs:
-  cypress-run:
+  run-e2e-tests:
+    name: Run E2E Tests
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
 
@@ -12,11 +15,6 @@ jobs:
           node-version: 18
           cache: "npm"
 
-      - name: Checkout
-        uses: actions/checkout@v1
+      - run: npm ci
 
-      - name: Cypress run
-        uses: cypress-io/github-action@v6
-        with:
-          build: npm run cypress:run
-          wait-on: http://localhost:4200
+      - run: npm run cypress:run
