@@ -15,6 +15,7 @@ O Lending Simulation é uma aplicação desenvolvida utilizando Angular e Tailwi
 - [Angular](https://angular.io/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Tailwindcss](https://tailwindcss.com/)
+- [Cypress](https://www.cypress.io/)
 
 ### 🚀 Iniciando o projeto
 
