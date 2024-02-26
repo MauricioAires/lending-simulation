@@ -1,5 +1,5 @@
 <main
-  class="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-20 lg:px-8"
+  class="grid min-h-full place-items-center bg-white px-6 lg:py-24 py-10 sm:py-20 lg:px-8"
 >
   <div class="text-center flex items-center justify-center flex-col">
     <a href="#" class="p-2 w-auto mb-10">
@@ -21,12 +21,14 @@
     </p>
 
     <div
-      class="w-7xl p-16 mt-10 flex flex-col rounded-3xl ring-1 ring-gray-200 lg:mx-0 lg:flex"
+      class="p-4 lg:p-16 mt-10 flex flex-col rounded-3xl ring-1 ring-gray-200 lg:mx-0 lg:flex"
     >
-      <div class="mx-auto max-w-xl px-8">
+      <div class="mx-auto px-4 lg:px-8">
         <p class="text-base font-semibold text-gray-600">Você vai receber</p>
         <p class="mt-2 flex items-baseline justify-center gap-x-2">
-          <span class="text-5xl font-bold tracking-tight text-orange-400">
+          <span
+            class="text-4xl lg:text-5xl font-bold tracking-tight text-orange-400"
+          >
             {{ this.loanPayload.loanAmountFormatted }}
           </span>
           <span

@@ -41,8 +41,8 @@ export class HomeComponent {
 
   public loanForm = this.formBuilder.group({
     name: ['', Validators.required],
-    loanAmount: [0, Validators.required],
-    numberOfInstallments: [0, Validators.required],
+    loanAmount: [null, Validators.required],
+    numberOfInstallments: [null, Validators.required],
   });
 
   constructor(
